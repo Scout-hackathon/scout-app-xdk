@@ -11,31 +11,6 @@
 	 
 </head>
 <body>
-<!-- <script type 'text/javascript'>
-Parse.initialize("JeSEgrL1MX37qwgT2XzijyKn43Dfn09FuezJU6Jg", "NpYwPST1m7ItNpaz1G8lW5TwsSBZDaz2MtH0pXAj");
-var userquery = new Parse.Query('User');
-var userquery_result = null;
-var username_x = [];
-userquery.find(
-	{
-        success: function( res ) {
-          console.log('success',res);
-          userquery_result = res;
-          res.forEach( function(userresult) {
-            console.log(userresult.id, ', also known as', userresult.get('username'));
-            username_x.push(userresult.get('username'));
-            document.getElementById("user").innerHTML = username_x[8];
-          });
-        },
-        error : function() {
-          console.log('error');
-         }
-       }
-       );
-      
-        
-</script> -->
-
 	<h1>How'd it go?!</h1>
 	<h3 >Please rate <!-- will be database call for username--><span id='user'>Caylee</span>.</h3>
 	<div class='circular'></div>
