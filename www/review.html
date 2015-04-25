@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review</title>
+	<meta content='width=device-width, initial-scale=1' name='viewport'/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src='js/jquery-1.11.2.js'></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+	<script src="js/app.js"> </script>
+	 
+</head>
+<body>
+<!-- <script type 'text/javascript'>
+Parse.initialize("JeSEgrL1MX37qwgT2XzijyKn43Dfn09FuezJU6Jg", "NpYwPST1m7ItNpaz1G8lW5TwsSBZDaz2MtH0pXAj");
+var userquery = new Parse.Query('User');
+var userquery_result = null;
+var username_x = [];
+userquery.find(
+	{
+        success: function( res ) {
+          console.log('success',res);
+          userquery_result = res;
+          res.forEach( function(userresult) {
+            console.log(userresult.id, ', also known as', userresult.get('username'));
+            username_x.push(userresult.get('username'));
+            document.getElementById("user").innerHTML = username_x[8];
+          });
+        },
+        error : function() {
+          console.log('error');
+         }
+       }
+       );
+      
+        
+</script> -->
+
+	<h1>How'd it go?!</h1>
+	<h3 >Please rate <!-- will be database call for username--><span id='user'>Caylee</span>.</h3>
+	<div class='circular'></div>
+
+	<!-- etiquette rating-->
+	<h3>Etiquette</h3>
+	<div id='etq-rat'> 
+		<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+	</div>
+
+	<!-- skill rating-->
+	<h3>Skill Level</h3>
+	<div id='skl-rat'>
+		<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><br>
+	</div>
+
+	<button type='button' class= 'btn'>
+		Submit
+	</button><br>
+
+	<a href='#'><em><u>Report a problem</u></em></a>
+</body>
+</html>
