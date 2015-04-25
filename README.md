@@ -11,5 +11,7 @@ Copyright © 2015, Caylee Betts, Siddhartha Penkalati, Yashar Fakhari, Joe Rehfu
     
     The user can also, as a player can apply for games, where managers can ask players, start/host games, and accept player applications.
     
-    After each game, both the player and user are suggested to put in a review. In the review there are 2 rating systems. Both are a 1 - 5 star rating system. Ettiquette is a rating system based off of the player/managers behavior, with 1 being extremly toxic, and 5 being an amazing. The second rating system is skill level, where 1 is not skilled enough, 3 average player, and 5 being too skilled.
+    After each game, both the player and user are suggested to put in a review. In the review there are 2 rating systems. Both
+    are a 1 - 5 star rating system. Ettiquette is a rating system based off of the player/managers behavior, with 1 being extremly toxic, and 5 being an amazing. The second rating system is skill level, where 1 is not skilled enough, 3 average
+    player, and 5 being too skilled.
     
