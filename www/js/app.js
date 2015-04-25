@@ -31,8 +31,24 @@ function main() {
     etiquette= $('#etq-rat').children('.glyphicon-star').length;
   });
   $('.btn').click(function saveRatings() {
-    /*saving ratings to database */
-    window.location.replace("index.html")
+    var User = Parse.Object.extend("User");
+    var Rating=Parse.Object.extend("Rating");
+    var rating= new Rating();
+	var query = new Parse.Query('User');
+	query.containedIn('objectId',['ElWAm3LNtS','YprBArHnni']);
+	query.find({
+		success: function(results){
+			rating.set('userId',results[0]);
+			rating.set('giverID',results[1]);
+			rating.set('skill',skill);
+			rating.set('etiquette',etiquette);
+			rating.save();
+		},
+		error: function(results,error){
+			alert('failed to create new object, with error code:' + error.message);
+		}
+	});
+    //window.location.replace("index.html")
   });
 };
 $(document).ready(main)
