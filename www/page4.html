@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>filters | scout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile-1.3.1.min.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/scout.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="filters" data-theme="a" id="page4">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="page2.html" data-icon="delete" data-iconpos="notext" class="ui-btn-right">
+          </a>
+          <h3>
+              Filters
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-role="fieldcontain" data-controltype="slider">
+              <label for="slider1">
+                  Distance
+              </label>
+              <input id="slider1" name="slider" value="25" min="5" max="50" data-highlight="true" data-theme="a" data-track-theme="a" data-mini="true" type="range"/>
+          </div>
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      League
+                  </b>
+              </p>
+          </div>
+          <div class="ui-grid-a">
+              <div class="ui-block-a">
+                  <div id="checkboxes1" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox1" name="" type="checkbox"/>
+                          <label for="checkbox1">
+                              GSSL
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+                  <div id="checkboxes5" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox5" name="" type="checkbox"/>
+                          <label for="checkbox5">
+                              Pick-up
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-a">
+                  <div id="checkboxes2" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox2" name="" type="checkbox"/>
+                          <label for="checkbox2">
+                              RATS
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+                  <div id="checkboxes4" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox4" name="" data-theme="a" type="checkbox"/>
+                          <label for="checkbox4">
+                              Co-Rec
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-a">
+                  <div id="checkboxes3" data-role="fieldcontain" data-controltype="checkboxes">
+                      <fieldset data-role="controlgroup" data-type="vertical">
+                          <input id="checkbox3" name="" data-theme="a" type="checkbox"/>
+                          <label for="checkbox3">
+                              NWCSL
+                          </label>
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+              </div>
+          </div>
+          <hr style="height:1px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"/>
+          <div data-role="fieldcontain" data-controltype="slider">
+              <label for="slider2">
+                  Skill Level
+              </label>
+              <input id="slider2" name="slider" value="2" min="1" max="5" data-highlight="true" data-mini="true" type="range"/>
+          </div>
+          <div data-controltype="textblock">
+              <p style="text-align: center;">
+                  <b>
+                      1 Beginner - 3 Intermediate - 5 Expert
+                  </b>
+                  <br/>
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
