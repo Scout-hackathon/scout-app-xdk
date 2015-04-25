@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "21b1f1ab-9b11-4979-94f0-053a9b1e52db",
-      "lastModifiedDate": 1429996635391,
+      "lastModifiedDate": 1430002555670,
       "creationDate": 1429996635100
     },
     "XDK-app-designer": "true",
@@ -52,7 +52,15 @@
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": [],
         "icons_": [],
-        "splashes_": [],
+        "splashes_": [
+          {
+            "relPath": "img/scout_wires.jpeg",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          }
+        ],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
@@ -77,7 +85,15 @@
         "appID_": "xdk.intel.blank.ad.template.crosswalk",
         "appAccess_": [],
         "icons_": [],
-        "splashes_": [],
+        "splashes_": [
+          {
+            "relPath": "img/scout_wires.jpeg",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          }
+        ],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
