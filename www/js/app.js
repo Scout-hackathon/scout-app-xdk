@@ -42,13 +42,19 @@ function main() {
 			rating.set('giverID',results[1]);
 			rating.set('skill',skill);
 			rating.set('etiquette',etiquette);
-			rating.save();
+			rating.save({
+				success: function(){
+					window.location.replace("index.html")
+				},
+				error: function(results,error){
+					alert('failed to create new object, with error code:' + error.message);
+				}
+			});
 		},
 		error: function(results,error){
 			alert('failed to create new object, with error code:' + error.message);
 		}
 	});
-    //window.location.replace("index.html")
   });
 };
 $(document).ready(main)
